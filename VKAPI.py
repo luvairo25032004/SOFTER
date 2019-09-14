@@ -276,5 +276,5 @@ async def say(ctx, channel: discord.TextChannel, *, cnt):
    embed = discord.Embed(description = cnt, colour = 0x00ff80) # Генерация красивого сообщения
    await channel.send(embed=embed)
 token = os.environ.get("BOT_TOKEN")
-Bot.run(token)
+Bot.run(str(token))
 
