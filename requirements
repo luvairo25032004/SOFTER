@@ -4,3 +4,4 @@ aiohttp
 websockets
 chardet
 package.json
+requirements.txt
