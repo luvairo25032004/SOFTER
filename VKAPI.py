@@ -281,5 +281,6 @@ async def say(ctx, channel: discord.TextChannel, *, cnt):
    await ctx.message.delete() # Удаляет написанное вами сообщение
    embed = discord.Embed(description = cnt, colour = 0x00ff80) # Генерация красивого сообщения
    await channel.send(embed=embed)
-Bot.run("NjE5MTg1ODYzNzk1OTMzMjE1.XX9qBg.hnMDDkUQkNp-PW20SJlCm7sd_OM")
+token = os.environ.get("BOT_TOKEN")
+Bot.run(str(token))
 
